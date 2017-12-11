@@ -23,8 +23,8 @@ import com.hazelcast.hibernate.local.TimestampsRegionCache;
 import com.hazelcast.hibernate.region.HazelcastCollectionRegion;
 import com.hazelcast.hibernate.region.HazelcastEntityRegion;
 import com.hazelcast.hibernate.region.HazelcastTimestampsRegion;
-import org.hibernate.cache.*;
-import org.hibernate.cfg.Settings;
+import org.luceehibernate.cache.*;
+import org.luceehibernate.cfg.Settings;
 
 import java.util.Properties;
 

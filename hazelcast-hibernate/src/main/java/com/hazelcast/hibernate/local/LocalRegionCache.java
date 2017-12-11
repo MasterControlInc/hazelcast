@@ -24,8 +24,8 @@ import com.hazelcast.core.MessageListener;
 import com.hazelcast.hibernate.CacheEnvironment;
 import com.hazelcast.hibernate.RegionCache;
 import com.hazelcast.util.Clock;
-import org.hibernate.cache.CacheDataDescription;
-import org.hibernate.cache.access.SoftLock;
+import org.luceehibernate.cache.CacheDataDescription;
+import org.luceehibernate.cache.access.SoftLock;
 
 import java.util.*;
 import java.util.Map.Entry;

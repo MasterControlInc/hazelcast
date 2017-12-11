@@ -18,7 +18,7 @@ package com.hazelcast.hibernate.region;
 
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.hibernate.RegionCache;
-import org.hibernate.cache.TimestampsRegion;
+import org.luceehibernate.cache.TimestampsRegion;
 
 import java.util.Properties;
 

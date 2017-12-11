@@ -16,7 +16,7 @@
 
 package com.hazelcast.hibernate.local;
 
-import org.hibernate.cache.access.SoftLock;
+import org.luceehibernate.cache.access.SoftLock;
 
 /**
  * @mdogan 11/12/12

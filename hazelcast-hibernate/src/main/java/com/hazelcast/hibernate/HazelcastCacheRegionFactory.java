@@ -21,7 +21,7 @@ import com.hazelcast.hibernate.distributed.IMapRegionCache;
 import com.hazelcast.hibernate.region.HazelcastCollectionRegion;
 import com.hazelcast.hibernate.region.HazelcastEntityRegion;
 import com.hazelcast.hibernate.region.HazelcastTimestampsRegion;
-import org.hibernate.cache.*;
+import org.luceehibernate.cache.*;
 
 import java.util.Properties;
 

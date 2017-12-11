@@ -18,8 +18,8 @@ package com.hazelcast.hibernate.region;
 
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.hibernate.RegionCache;
-import org.hibernate.cache.CacheDataDescription;
-import org.hibernate.cache.TransactionalDataRegion;
+import org.luceehibernate.cache.CacheDataDescription;
+import org.luceehibernate.cache.TransactionalDataRegion;
 
 import java.util.Properties;
 
@@ -41,14 +41,14 @@ public abstract class AbstractTransactionalDataRegion<Cache extends RegionCache>
     }
 
     /**
-     * @see org.hibernate.cache.TransactionalDataRegion#getCacheDataDescription()
+     * @see org.luceehibernate.cache.TransactionalDataRegion#getCacheDataDescription()
      */
     public CacheDataDescription getCacheDataDescription() {
         return metadata;
     }
 
     /**
-     * @see org.hibernate.cache.TransactionalDataRegion#isTransactionAware()
+     * @see org.luceehibernate.cache.TransactionalDataRegion#isTransactionAware()
      */
     public boolean isTransactionAware() {
         return false;

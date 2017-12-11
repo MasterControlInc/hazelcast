@@ -19,7 +19,7 @@ package com.hazelcast.hibernate;
 import com.hazelcast.core.Hazelcast;
 import com.hazelcast.hibernate.provider.HazelcastCacheProvider;
 import com.hazelcast.impl.GroupProperties;
-import org.hibernate.cfg.Environment;
+import org.luceehibernate.cfg.Environment;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.runner.RunWith;

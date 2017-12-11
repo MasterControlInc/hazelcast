@@ -18,9 +18,9 @@ package com.hazelcast.hibernate;
 
 import com.hazelcast.core.Hazelcast;
 import com.hazelcast.hibernate.entity.DummyEntity;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
-import org.hibernate.cfg.Environment;
+import org.luceehibernate.Session;
+import org.luceehibernate.Transaction;
+import org.luceehibernate.cfg.Environment;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;

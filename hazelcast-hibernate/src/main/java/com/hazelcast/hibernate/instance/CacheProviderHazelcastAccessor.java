@@ -18,8 +18,8 @@ package com.hazelcast.hibernate.instance;
 
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.hibernate.provider.HazelcastCacheProvider;
-import org.hibernate.cache.CacheProvider;
-import org.hibernate.cfg.Settings;
+import org.luceehibernate.cache.CacheProvider;
+import org.luceehibernate.cfg.Settings;
 
 import java.lang.reflect.Method;
 import java.util.logging.Level;

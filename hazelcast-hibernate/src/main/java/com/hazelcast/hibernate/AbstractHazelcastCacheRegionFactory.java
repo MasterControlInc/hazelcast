@@ -22,11 +22,11 @@ import com.hazelcast.hibernate.instance.IHazelcastInstanceLoader;
 import com.hazelcast.hibernate.region.HazelcastQueryResultsRegion;
 import com.hazelcast.logging.ILogger;
 import com.hazelcast.logging.Logger;
-import org.hibernate.cache.CacheException;
-import org.hibernate.cache.QueryResultsRegion;
-import org.hibernate.cache.RegionFactory;
-import org.hibernate.cache.access.AccessType;
-import org.hibernate.cfg.Settings;
+import org.luceehibernate.cache.CacheException;
+import org.luceehibernate.cache.QueryResultsRegion;
+import org.luceehibernate.cache.RegionFactory;
+import org.luceehibernate.cache.access.AccessType;
+import org.luceehibernate.cfg.Settings;
 
 import java.util.Properties;
 import java.util.logging.Level;

@@ -19,7 +19,7 @@ package com.hazelcast.hibernate.region;
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.hibernate.RegionCache;
 import com.hazelcast.logging.ILogger;
-import org.hibernate.cache.Region;
+import org.luceehibernate.cache.Region;
 
 /**
  * @author Leo Kim (lkim@limewire.com)

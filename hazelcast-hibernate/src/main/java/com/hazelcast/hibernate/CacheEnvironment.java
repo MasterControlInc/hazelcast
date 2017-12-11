@@ -16,9 +16,9 @@
 
 package com.hazelcast.hibernate;
 
-import org.hibernate.cfg.Environment;
-import org.hibernate.util.PropertiesHelper;
-import org.hibernate.util.StringHelper;
+import org.luceehibernate.cfg.Environment;
+import org.luceehibernate.util.PropertiesHelper;
+import org.luceehibernate.util.StringHelper;
 
 import java.util.Properties;
 

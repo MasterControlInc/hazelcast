@@ -21,11 +21,11 @@ import com.hazelcast.hibernate.RegionCache;
 import com.hazelcast.hibernate.access.NonStrictReadWriteAccessDelegate;
 import com.hazelcast.hibernate.access.ReadOnlyAccessDelegate;
 import com.hazelcast.hibernate.access.ReadWriteAccessDelegate;
-import org.hibernate.cache.CacheDataDescription;
-import org.hibernate.cache.CacheException;
-import org.hibernate.cache.EntityRegion;
-import org.hibernate.cache.access.AccessType;
-import org.hibernate.cache.access.EntityRegionAccessStrategy;
+import org.luceehibernate.cache.CacheDataDescription;
+import org.luceehibernate.cache.CacheException;
+import org.luceehibernate.cache.EntityRegion;
+import org.luceehibernate.cache.access.AccessType;
+import org.luceehibernate.cache.access.EntityRegionAccessStrategy;
 
 import java.util.Properties;
 

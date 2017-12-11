@@ -18,7 +18,7 @@ package com.hazelcast.hibernate.instance;
 
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.hibernate.CacheEnvironment;
-import org.hibernate.cache.CacheException;
+import org.luceehibernate.cache.CacheException;
 
 import java.util.Properties;
 

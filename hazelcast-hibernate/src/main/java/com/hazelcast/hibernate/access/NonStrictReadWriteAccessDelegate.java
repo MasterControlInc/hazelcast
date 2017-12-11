@@ -17,8 +17,8 @@
 package com.hazelcast.hibernate.access;
 
 import com.hazelcast.hibernate.region.HazelcastRegion;
-import org.hibernate.cache.CacheException;
-import org.hibernate.cache.access.SoftLock;
+import org.luceehibernate.cache.CacheException;
+import org.luceehibernate.cache.access.SoftLock;
 
 import java.util.Properties;
 

@@ -24,9 +24,9 @@ import com.hazelcast.hibernate.HazelcastTimestamper;
 import com.hazelcast.hibernate.RegionCache;
 import com.hazelcast.logging.ILogger;
 import com.hazelcast.logging.Logger;
-import org.hibernate.cache.CacheDataDescription;
-import org.hibernate.cache.access.SoftLock;
-import org.hibernate.cache.entry.CacheEntry;
+import org.luceehibernate.cache.CacheDataDescription;
+import org.luceehibernate.cache.access.SoftLock;
+import org.luceehibernate.cache.entry.CacheEntry;
 
 import java.util.Comparator;
 import java.util.Map;

@@ -22,7 +22,7 @@ import com.hazelcast.hibernate.HazelcastTimestamper;
 import com.hazelcast.hibernate.RegionCache;
 import com.hazelcast.logging.ILogger;
 import com.hazelcast.logging.Logger;
-import org.hibernate.cache.CacheException;
+import org.luceehibernate.cache.CacheException;
 
 import java.util.Map;
 import java.util.Properties;
@@ -43,7 +43,7 @@ abstract class AbstractHazelcastRegion<Cache extends RegionCache> implements Haz
     }
 
     public void destroy() throws CacheException {
-//    	Destroy of the region should not propagate 
+//    	Destroy of the region should not propagate
 //    	to other nodes of cluster.
 //    	Do nothing on destroy.
     }
@@ -87,7 +87,7 @@ abstract class AbstractHazelcastRegion<Cache extends RegionCache> implements Haz
     }
 
     /**
-     * Appears to be used only by <code>org.hibernate.stat.SecondLevelCacheStatistics</code>.
+     * Appears to be used only by <code>org.luceehibernate.stat.SecondLevelCacheStatistics</code>.
      *
      * @return the internal <code>IMap</code> used for this region.
      */

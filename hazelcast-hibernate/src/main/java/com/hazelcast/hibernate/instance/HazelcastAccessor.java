@@ -19,10 +19,10 @@ package com.hazelcast.hibernate.instance;
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.logging.ILogger;
 import com.hazelcast.logging.Logger;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Settings;
-import org.hibernate.engine.SessionFactoryImplementor;
+import org.luceehibernate.Session;
+import org.luceehibernate.SessionFactory;
+import org.luceehibernate.cfg.Settings;
+import org.luceehibernate.engine.SessionFactoryImplementor;
 
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.logging.Level;

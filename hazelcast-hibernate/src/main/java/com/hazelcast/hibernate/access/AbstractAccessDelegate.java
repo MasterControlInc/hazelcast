@@ -21,8 +21,8 @@ import com.hazelcast.hibernate.RegionCache;
 import com.hazelcast.hibernate.region.AbstractTransactionalDataRegion;
 import com.hazelcast.hibernate.region.HazelcastRegion;
 import com.hazelcast.logging.ILogger;
-import org.hibernate.cache.CacheException;
-import org.hibernate.cache.access.SoftLock;
+import org.luceehibernate.cache.CacheException;
+import org.luceehibernate.cache.access.SoftLock;
 
 import java.util.Comparator;
 import java.util.Properties;

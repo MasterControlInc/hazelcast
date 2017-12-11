@@ -35,7 +35,7 @@
         <hsqldb.version>1.8.0.10</hsqldb.version>
         <javaassist.version>3.12.1.GA</javaassist.version>
     </properties>
-                  
+
     <build>
         <plugins>
             <plugin>
@@ -150,9 +150,9 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>org.hibernate</groupId>
+            <groupId>org.luceehibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>${hibernate.core.version}</version>
+            <version>3.5.9-20171207.160647-1</version>
             <scope>provided</scope>
             <exclusions>
                 <exclusion>

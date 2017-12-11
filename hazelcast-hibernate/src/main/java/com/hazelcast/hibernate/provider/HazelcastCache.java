@@ -24,8 +24,8 @@ import com.hazelcast.hibernate.HazelcastCacheRegionFactory;
 import com.hazelcast.hibernate.HazelcastTimestamper;
 import com.hazelcast.logging.ILogger;
 import com.hazelcast.logging.Logger;
-import org.hibernate.cache.Cache;
-import org.hibernate.cache.CacheException;
+import org.luceehibernate.cache.Cache;
+import org.luceehibernate.cache.CacheException;
 
 import java.util.Map;
 import java.util.Properties;
@@ -64,7 +64,7 @@ public final class HazelcastCache implements Cache {
     }
 
     public void destroy() throws CacheException {
-//    	Destroy of the cache should not propagate 
+//    	Destroy of the cache should not propagate
 //    	to other nodes of cluster.
 //    	Do nothing on destroy.
     }

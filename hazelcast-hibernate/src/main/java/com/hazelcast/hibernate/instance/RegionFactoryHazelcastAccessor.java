@@ -19,10 +19,10 @@ package com.hazelcast.hibernate.instance;
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.hibernate.AbstractHazelcastCacheRegionFactory;
 import com.hazelcast.hibernate.provider.HazelcastCacheProvider;
-import org.hibernate.cache.CacheProvider;
-import org.hibernate.cache.RegionFactory;
-import org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge;
-import org.hibernate.cfg.Settings;
+import org.luceehibernate.cache.CacheProvider;
+import org.luceehibernate.cache.RegionFactory;
+import org.luceehibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge;
+import org.luceehibernate.cfg.Settings;
 
 import java.util.logging.Level;
 

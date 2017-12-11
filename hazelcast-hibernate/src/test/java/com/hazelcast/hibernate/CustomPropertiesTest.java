@@ -26,11 +26,11 @@ import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.hibernate.entity.DummyEntity;
 import com.hazelcast.hibernate.instance.HazelcastAccessor;
 import com.hazelcast.hibernate.provider.HazelcastCacheProvider;
-import org.hibernate.*;
-import org.hibernate.cache.CacheException;
-import org.hibernate.cache.CacheKey;
-import org.hibernate.cfg.Environment;
-import org.hibernate.engine.SessionFactoryImplementor;
+import org.luceehibernate.*;
+import org.luceehibernate.cache.CacheException;
+import org.luceehibernate.cache.CacheKey;
+import org.luceehibernate.cfg.Environment;
+import org.luceehibernate.engine.SessionFactoryImplementor;
 import org.junit.*;
 import org.junit.runner.RunWith;
 

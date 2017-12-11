@@ -16,7 +16,7 @@
 
 package com.hazelcast.hibernate;
 
-import org.hibernate.cache.access.SoftLock;
+import org.luceehibernate.cache.access.SoftLock;
 
 import java.util.Map;
 

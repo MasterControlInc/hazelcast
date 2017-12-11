@@ -24,9 +24,9 @@ import com.hazelcast.hibernate.instance.HazelcastInstanceFactory;
 import com.hazelcast.hibernate.instance.IHazelcastInstanceLoader;
 import com.hazelcast.logging.ILogger;
 import com.hazelcast.logging.Logger;
-import org.hibernate.cache.Cache;
-import org.hibernate.cache.CacheException;
-import org.hibernate.cache.CacheProvider;
+import org.luceehibernate.cache.Cache;
+import org.luceehibernate.cache.CacheException;
+import org.luceehibernate.cache.CacheProvider;
 
 import java.util.Properties;
 import java.util.logging.Level;

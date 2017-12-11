@@ -23,8 +23,8 @@ import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.hibernate.CacheEnvironment;
 import com.hazelcast.logging.ILogger;
 import com.hazelcast.logging.Logger;
-import org.hibernate.cache.CacheException;
-import org.hibernate.util.PropertiesHelper;
+import org.luceehibernate.cache.CacheException;
+import org.luceehibernate.util.PropertiesHelper;
 
 import java.io.IOException;
 import java.util.Properties;

@@ -19,8 +19,8 @@ package com.hazelcast.hibernate.region;
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.core.OperationTimeoutException;
 import com.hazelcast.hibernate.RegionCache;
-import org.hibernate.cache.CacheException;
-import org.hibernate.cache.GeneralDataRegion;
+import org.luceehibernate.cache.CacheException;
+import org.luceehibernate.cache.GeneralDataRegion;
 
 import java.util.Properties;
 

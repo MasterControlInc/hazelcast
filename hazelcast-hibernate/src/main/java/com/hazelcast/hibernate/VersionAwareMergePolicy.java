@@ -19,7 +19,7 @@ package com.hazelcast.hibernate;
 import com.hazelcast.core.MapEntry;
 import com.hazelcast.impl.base.DataRecordEntry;
 import com.hazelcast.merge.MergePolicy;
-import org.hibernate.cache.entry.CacheEntry;
+import org.luceehibernate.cache.entry.CacheEntry;
 
 public class VersionAwareMergePolicy implements MergePolicy {
     public static final String NAME = "hz.HIBERNATE_VERSION_AWARE";

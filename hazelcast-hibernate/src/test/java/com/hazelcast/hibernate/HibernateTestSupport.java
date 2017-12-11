@@ -19,8 +19,8 @@ package com.hazelcast.hibernate;
 import com.hazelcast.core.Hazelcast;
 import com.hazelcast.logging.ILogger;
 import com.hazelcast.logging.Logger;
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Configuration;
+import org.luceehibernate.SessionFactory;
+import org.luceehibernate.cfg.Configuration;
 import org.junit.After;
 import org.junit.Before;
 

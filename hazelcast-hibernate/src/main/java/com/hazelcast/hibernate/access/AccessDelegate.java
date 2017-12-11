@@ -17,8 +17,8 @@
 package com.hazelcast.hibernate.access;
 
 import com.hazelcast.hibernate.region.HazelcastRegion;
-import org.hibernate.cache.CacheException;
-import org.hibernate.cache.access.SoftLock;
+import org.luceehibernate.cache.CacheException;
+import org.luceehibernate.cache.access.SoftLock;
 
 /**
  * @author Leo Kim (lkim@limewire.com)
@@ -39,8 +39,8 @@ public interface AccessDelegate<T extends HazelcastRegion> {
      * @param key         The key of the item to be retrieved.
      * @param txTimestamp a timestamp prior to the transaction start time
      * @return the cached object or <tt>null</tt>
-     * @throws org.hibernate.cache.CacheException
-     *          Propogated from underlying {@link org.hibernate.cache.Region}
+     * @throws org.luceehibernate.cache.CacheException
+     *          Propogated from underlying {@link org.luceehibernate.cache.Region}
      */
     Object get(Object key, long txTimestamp) throws CacheException;
 
@@ -53,8 +53,8 @@ public interface AccessDelegate<T extends HazelcastRegion> {
      * @param value   The item
      * @param version The item's version value
      * @return Were the contents of the cache actual changed by this operation?
-     * @throws org.hibernate.cache.CacheException
-     *          Propogated from underlying {@link org.hibernate.cache.Region}
+     * @throws org.luceehibernate.cache.CacheException
+     *          Propogated from underlying {@link org.luceehibernate.cache.Region}
      */
     boolean insert(Object key, Object value, Object version) throws CacheException;
 
@@ -67,8 +67,8 @@ public interface AccessDelegate<T extends HazelcastRegion> {
      * @param value   The item
      * @param version The item's version value
      * @return Were the contents of the cache actual changed by this operation?
-     * @throws org.hibernate.cache.CacheException
-     *          Propogated from underlying {@link org.hibernate.cache.Region}
+     * @throws org.luceehibernate.cache.CacheException
+     *          Propogated from underlying {@link org.luceehibernate.cache.Region}
      */
     boolean afterInsert(Object key, Object value, Object version) throws CacheException;
 
@@ -82,8 +82,8 @@ public interface AccessDelegate<T extends HazelcastRegion> {
      * @param currentVersion  The item's current version value
      * @param previousVersion The item's previous version value
      * @return Were the contents of the cache actual changed by this operation?
-     * @throws org.hibernate.cache.CacheException
-     *          Propogated from underlying {@link org.hibernate.cache.Region}
+     * @throws org.luceehibernate.cache.CacheException
+     *          Propogated from underlying {@link org.luceehibernate.cache.Region}
      */
     boolean update(Object key, Object value, Object currentVersion, Object previousVersion) throws CacheException;
 
@@ -98,8 +98,8 @@ public interface AccessDelegate<T extends HazelcastRegion> {
      * @param previousVersion The item's previous version value
      * @param lock            The lock previously obtained from {@link #lockItem}
      * @return Were the contents of the cache actual changed by this operation?
-     * @throws org.hibernate.cache.CacheException
-     *          Propogated from underlying {@link org.hibernate.cache.Region}
+     * @throws org.luceehibernate.cache.CacheException
+     *          Propogated from underlying {@link org.luceehibernate.cache.Region}
      */
     boolean afterUpdate(Object key, Object value, Object currentVersion, Object previousVersion, SoftLock lock)
             throws CacheException;
@@ -112,8 +112,8 @@ public interface AccessDelegate<T extends HazelcastRegion> {
      * @param txTimestamp a timestamp prior to the transaction start time
      * @param version     the item version number
      * @return <tt>true</tt> if the object was successfully cached
-     * @throws org.hibernate.cache.CacheException
-     *          Propogated from underlying {@link org.hibernate.cache.Region}
+     * @throws org.luceehibernate.cache.CacheException
+     *          Propogated from underlying {@link org.luceehibernate.cache.Region}
      */
     boolean putFromLoad(Object key, Object value, long txTimestamp, Object version) throws CacheException;
 
@@ -127,8 +127,8 @@ public interface AccessDelegate<T extends HazelcastRegion> {
      * @param version            the item version number
      * @param minimalPutOverride Explicit minimalPut flag
      * @return <tt>true</tt> if the object was successfully cached
-     * @throws org.hibernate.cache.CacheException
-     *          Propogated from underlying {@link org.hibernate.cache.Region}
+     * @throws org.luceehibernate.cache.CacheException
+     *          Propogated from underlying {@link org.luceehibernate.cache.Region}
      */
     boolean putFromLoad(Object key, Object value, long txTimestamp, Object version, boolean minimalPutOverride)
             throws CacheException;
@@ -138,16 +138,16 @@ public interface AccessDelegate<T extends HazelcastRegion> {
      * This method is used by "synchronous" concurrency strategies.
      *
      * @param key The key of the item to remove
-     * @throws org.hibernate.cache.CacheException
-     *          Propogated from underlying {@link org.hibernate.cache.Region}
+     * @throws org.luceehibernate.cache.CacheException
+     *          Propogated from underlying {@link org.luceehibernate.cache.Region}
      */
     void remove(Object key) throws CacheException;
 
     /**
      * Called to evict data from the entire region
      *
-     * @throws org.hibernate.cache.CacheException
-     *          Propogated from underlying {@link org.hibernate.cache.Region}
+     * @throws org.luceehibernate.cache.CacheException
+     *          Propogated from underlying {@link org.luceehibernate.cache.Region}
      */
     void removeAll() throws CacheException;
 
@@ -156,8 +156,8 @@ public interface AccessDelegate<T extends HazelcastRegion> {
      * isolation.
      *
      * @param key The key of the item to remove
-     * @throws org.hibernate.cache.CacheException
-     *          Propogated from underlying {@link org.hibernate.cache.Region}
+     * @throws org.luceehibernate.cache.CacheException
+     *          Propogated from underlying {@link org.luceehibernate.cache.Region}
      */
     void evict(Object key) throws CacheException;
 
@@ -165,8 +165,8 @@ public interface AccessDelegate<T extends HazelcastRegion> {
      * Forcibly evict all items from the cache immediately without regard for transaction
      * isolation.
      *
-     * @throws org.hibernate.cache.CacheException
-     *          Propogated from underlying {@link org.hibernate.cache.Region}
+     * @throws org.luceehibernate.cache.CacheException
+     *          Propogated from underlying {@link org.luceehibernate.cache.Region}
      */
     void evictAll() throws CacheException;
 
@@ -181,8 +181,8 @@ public interface AccessDelegate<T extends HazelcastRegion> {
      * @param key     The key of the item to lock
      * @param version The item's current version value
      * @return A representation of our lock on the item; or null.
-     * @throws org.hibernate.cache.CacheException
-     *          Propogated from underlying {@link org.hibernate.cache.Region}
+     * @throws org.luceehibernate.cache.CacheException
+     *          Propogated from underlying {@link org.luceehibernate.cache.Region}
      */
     SoftLock lockItem(Object key, Object version) throws CacheException;
 
@@ -190,8 +190,8 @@ public interface AccessDelegate<T extends HazelcastRegion> {
      * Lock the entire region
      *
      * @return A representation of our lock on the item; or null.
-     * @throws org.hibernate.cache.CacheException
-     *          Propogated from underlying {@link org.hibernate.cache.Region}
+     * @throws org.luceehibernate.cache.CacheException
+     *          Propogated from underlying {@link org.luceehibernate.cache.Region}
      */
     SoftLock lockRegion() throws CacheException;
 
@@ -202,8 +202,8 @@ public interface AccessDelegate<T extends HazelcastRegion> {
      *
      * @param key  The item key
      * @param lock The lock previously obtained from {@link #lockItem}
-     * @throws org.hibernate.cache.CacheException
-     *          Propogated from underlying {@link org.hibernate.cache.Region}
+     * @throws org.luceehibernate.cache.CacheException
+     *          Propogated from underlying {@link org.luceehibernate.cache.Region}
      */
     void unlockItem(Object key, SoftLock lock) throws CacheException;
 
@@ -212,8 +212,8 @@ public interface AccessDelegate<T extends HazelcastRegion> {
      * region
      *
      * @param lock The lock previously obtained from {@link #lockRegion}
-     * @throws org.hibernate.cache.CacheException
-     *          Propogated from underlying {@link org.hibernate.cache.Region}
+     * @throws org.luceehibernate.cache.CacheException
+     *          Propogated from underlying {@link org.luceehibernate.cache.Region}
      */
     void unlockRegion(SoftLock lock) throws CacheException;
 }

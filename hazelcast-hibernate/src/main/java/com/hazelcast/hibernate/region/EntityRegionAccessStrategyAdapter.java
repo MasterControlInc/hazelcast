@@ -17,10 +17,10 @@
 package com.hazelcast.hibernate.region;
 
 import com.hazelcast.hibernate.access.AccessDelegate;
-import org.hibernate.cache.CacheException;
-import org.hibernate.cache.EntityRegion;
-import org.hibernate.cache.access.EntityRegionAccessStrategy;
-import org.hibernate.cache.access.SoftLock;
+import org.luceehibernate.cache.CacheException;
+import org.luceehibernate.cache.EntityRegion;
+import org.luceehibernate.cache.access.EntityRegionAccessStrategy;
+import org.luceehibernate.cache.access.SoftLock;
 
 /**
  * @author Leo Kim (lkim@limewire.com)
