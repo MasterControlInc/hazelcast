@@ -32,6 +32,8 @@ repo_key=libs-release-local
 - Follow above steps to build.
 - Run `gradle artifactoryPublish` from the root of the project and the `hazelcast-all` folders.
 
+In order to publish a release build of the library make sure the repo-key is set to libs-release-local, otherwise for snapshots set that to libs-snapshot-local and make sure -SNAPSHOT is in the name of the built artifact.
+
 ---
 
 
