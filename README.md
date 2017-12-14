@@ -21,7 +21,7 @@ in order to be compatible with [MasterControl's fork of hibernate that is compat
 
 
 #### How to publish:
-- Add a file name `gradle.properties` to the root of the `hazelcast-all` folder with the following contents:
+- Add a file name `gradle.properties` to the root of the project and `hazelcast-all` folder with the following contents:
 ```
 artifactory_user=<Artifactory Username With Publish Rights>
 artifactory_password=<Artifactory Password with Publish Rights>
@@ -30,7 +30,7 @@ repo_key=libs-release-local
 ```
 - Change the current version number to the new one throughout the project (Search and Replace)
 - Follow above steps to build.
-- Navigate into the `hazelcast-all` folder and run `gradle artifactoryPublish`
+- Run `gradle artifactoryPublish` from the root of the project and the `hazelcast-all` folders.
 
 ---
 
