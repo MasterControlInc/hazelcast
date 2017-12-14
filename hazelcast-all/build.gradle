@@ -1,0 +1,76 @@
+group 'com.hazelcast'
+version '2.6.8.1'
+
+buildscript {
+    repositories {
+        maven {
+            credentials {
+                username "${artifactory_user}"
+                password "${artifactory_password}"
+            }
+            url "https://labs.mastercontrol.com/artifactory/jcenter"
+        }
+    }
+    dependencies {
+        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.0.0"
+    }
+}
+
+apply plugin: 'com.jfrog.artifactory'
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+def theRepoKey = repositoryKey()
+artifactory {
+    contextUrl = "${artifactory_contextUrl}"
+    publish {
+        repository {
+            repoKey = theRepoKey
+            username = "${artifactory_user}"
+            password = "${artifactory_password}"
+        }
+        defaults {
+            publications('mavenJava')
+        }
+    }
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId 'com.hazelcast'
+            artifactId 'hazelcast-all'
+            version publishVersion()
+
+            pom.withXml {
+                def xml = asString()
+                xml.delete(0, xml.length()).append(file("$buildDir/../pom.xml").text)
+            }
+
+            artifact(file("$buildDir/../target/hazelcast-all-2.6.8.1.jar"))
+        }
+    }
+}
+
+def publishVersion() {
+    "${version}"
+
+}
+
+def repositoryKey() {
+
+    repo_key = "libs-release-local"
+
+}
+
+

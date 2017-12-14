@@ -19,6 +19,19 @@ in order to be compatible with [MasterControl's fork of hibernate that is compat
 - Run `mvn clean install -DskipTests` from the root of the project.
 - Your hazelcast-all jar will be in the `hazelcast-all/target` folder
 
+
+#### How to publish:
+- Add a file name `gradle.properties` to the root of the `hazelcast-all` folder with the following contents:
+```
+artifactory_user=<Artifactory Username With Publish Rights>
+artifactory_password=<Artifactory Password with Publish Rights>
+artifactory_contextUrl=https://labs.mastercontrol.com/artifactory/
+repo_key=libs-release-local   
+```
+- Change the current version number to the new one throughout the project (Search and Replace)
+- Follow above steps to build.
+- Navigate into the `hazelcast-all` folder and run `gradle artifactoryPublish`
+
 ---
 
 
