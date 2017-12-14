@@ -4,6 +4,25 @@ With its various distributed data structures, distributed caching capabilities, 
 integration with Spring and Hibernate and more importantly with so many happy users, Hazelcast is feature-rich,
 enterprise-ready and developer-friendly in-memory data grid solution.
 
+---
+
+### MasterControl Information
+
+#### What is different:
+- This version of hazelcast is a fork of the 2.6.8 version of hazelcast with all dependencies on `org.hibernate` changed to `org.luceehibernate`
+in order to be compatible with [MasterControl's fork of hibernate that is compatible with our changes to lucee](https://github.com/MasterControlInc/hibernate-orm).
+
+#### How to build:
+- Clone this repository.
+- Copy the `settings.xml` file from the root of this project into your `C:\Users\<username>\.m2\` folder replacing `ARTIFACOTORY_USERNAME` with your artifactory username and `ARTIFACOTORY_PASSWORD` with your artifactory password.
+- Make sure to have [maven](https://maven.apache.org/install.html) installed.
+- Run `mvn clean install -DskipTests` from the root of the project.
+- Your hazelcast-all jar will be in the `hazelcast-all/target` folder
+
+---
+
+
+
 ### Features:
 
 * Distributed implementations of `java.util.{Queue, Set, List, Map}`
