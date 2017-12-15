@@ -150,7 +150,7 @@
         <dependency>
             <groupId>org.luceehibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>3.5.9-20171207.160647-1</version>
+            <version>3.5.5.1-Final</version>
             <scope>provided</scope>
             <exclusions>
                 <exclusion>
